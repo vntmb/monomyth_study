@@ -2,9 +2,9 @@ import re
 import requests
 import lxml.html
 
-num_movies = 899
+upper_bound = 2000
 
-for num in range(1, num_movies + 1):
+for num in range(900, upper_bound):
 
     num = str(num)
     # Find the movie's title to be used as document name

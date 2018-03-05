@@ -20,4 +20,4 @@ for num in range(1, upper_bound):
     suf = ".gexf"
     url = root + num + suf
     r = requests.get(url, allow_redirects=True)
-    open(movie_title + ".xml", "wb").write(r.content)
+    open(movie_title + ".gexf", "wb").write(r.content)
